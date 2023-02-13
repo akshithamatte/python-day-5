@@ -1,0 +1,8 @@
+a=input("enter the string :")
+b=a.split()
+for i in range(0,len(b)+1):
+    for j in range(i):
+        max=b[j]
+        if(b[j]>max):
+            max=b[j]
+print(len(max))

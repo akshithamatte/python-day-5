@@ -1,0 +1,16 @@
+n=int(input("enter the first number :"))
+if n==0:
+    print(" Enter a valid number")
+m=int(input("enter the second number :"))
+if m==0:
+    print("Enter a valid number")
+sum=0
+a=n*m
+for i in range(1,min(n,m)):
+    if((n%i==0) and (m%i==0)):
+        sum=sum+i
+        b=sum
+if(a%b==0):
+    print("YEAH")
+else:
+    print("NAH")
